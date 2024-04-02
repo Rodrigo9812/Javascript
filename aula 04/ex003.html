@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{font: 12pt Arial;}
+        h1{font-weight: bolder; font-size: 2em;}
+        button{font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v1.0</h1>
+    <button onclick="inicio()">Clique para começar!</button>
+    <script>
+        function inicio(){
+            let nome = window.prompt('Qual é o seu nome?')
+            window.alert(`olá, ${nome} ! É um prazer te conhecer!`)
+            let idade = window.prompt('Qual sua Idade?')
+            window.alert(`Que legal ${nome} voce parece muito novo para ter ${idade} anos !!`)
+            let avaliar = window.confirm ('Esta gostando do curso?')
+        }
+    </script>
+
+</body>
+</html>
