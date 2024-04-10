@@ -12,12 +12,14 @@
             font-weight: bold;
         }
         #caixa{
-            width: 500px;
+            width: 300px;
+            height: 400px;
             margin: auto;
             display: flex;
             flex-direction: column;
             padding: 10px;
             border-radius: 10px;
+            text-indent: 20px;
         }
         #caixa>h1{
             margin: auto;
@@ -31,10 +33,10 @@
         <p class="texto">Siga sua vida sem comparações e seja feliz!!</p>
     </div>
     <script>
-        var ano = Number(window.prompt('Em que ano estamos?'))
+        /*var ano = Number(window.prompt('Em que ano estamos?'))
         var nascimento = Number(window.prompt ('Em que ano voce nasceu?'))
         var resultado = ano-nascimento
-        window.alert(`Voce tem ou fará ${resultado} anos!`)
+        window.alert(`Voce tem ou fará ${resultado} anos!`)*/
         var caixa = window.document.getElementById('caixa');
         var titulo = window.document.getElementById('titulo');
         var texto = window.document.getElementsByClassName('texto')
