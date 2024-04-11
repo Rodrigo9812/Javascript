@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-size: 1.3em;
+            background-color: rgba(20, 81, 101, 0.855);
+        }
+        form{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        form input{
+            font-size: 0.7em;
+        }
+        div#tudo{
+            background-color: lightblue;
+            width: 300px;
+            height: 240px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        div#tudo h1{
+            font-size: 1.7em;
+            text-align: center;
+        }
+        input#num1, input#num2{
+            width: 50px;
+        }
+        input#mult1, input#mult2{
+            width: 50px;
+        }
+        input#menos1 , input#menos2{
+            width: 51px;
+        }
+        input#divi1, input#divi2{
+            width: 52px;
+        }
+        input#soma{
+            font-size: .8em;
+            padding: 3px;
+            margin: 4px;
+        }
+        div#res{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tudo">
+        <h1>Mini-Calculadora</h1>
+        <form action="#">
+            <input type="number" name="num1" id="num1"> +
+            <input type="number" name="num2" id="num2">
+            <input type="button" value="Soma" id="soma" onclick="somar()"><br>
+            <input type="number" name="menos1" id="menos1"> -
+            <input type="number" name="menos2" id="menos2">
+            <input type="button" value="Soma" id="soma" onclick="diminuir()"><br>
+            <input type="number" name="mult1" id="mult1"> x
+            <input type="number" name="mult2" id="mult2">
+            <input type="button" value="Soma" id="soma" onclick="multiplicar()"><br>
+            <input type="number" name="divi1" id="divi1"> /
+            <input type="number" name="divi2" id="divi2">
+            <input type="button" value="Soma" id="soma" onclick="dividir()">
+            <div id="res">Resultado</div>
+
+        </form>
+
+    </div>
+    <script>
+        function somar(){
+        var numero1=window.document.getElementById('num1')
+        var numero2=window.document.getElementById('num2')
+        var res=window.document.getElementById('res')
+        var n1 =Number(numero1.value)
+        var n2 =Number(numero2.value)
+        var s = n1+n2
+        res.innerHTML=s
+    }
+    function diminuir(){
+        var dim1=document.getElementById('menos1')
+        var dim2=document.getElementById('menos2')
+        var res=document.getElementById('res')
+        var di1=Number(dim1.value)
+        var di2=Number(dim2.value)
+        var d=di1-di2
+        res.innerHTML=d
+    }
+    function multiplicar(){
+        var multi1 = document.getElementById('mult1')
+        var multi2 = document.getElementById('mult2')
+        var m1 = Number(mult1.value)
+        var m2 = Number(mult2.value)
+        var s = m1 * m2
+        res.innerHTML= s
+    }
+    function dividir(){
+        var div1=document.getElementById('divi1')
+        var div2=document.getElementById('divi2')
+        var d1=Number(div1.value)
+        var d2=Number(div2.value)
+        var d=d1/d2
+        res.innerHTML=d
+    }
+    </script>
+</body>
+</html>
