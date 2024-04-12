@@ -24,15 +24,17 @@
         div#tudo{
             background-color: lightblue;
             width: 300px;
-            height: 240px;
+            height: 232px;
             padding: 10px;
             margin: auto;
             margin-top: 20px;
             border-radius: 10px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.46);
         }
         div#tudo h1{
             font-size: 1.7em;
             text-align: center;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
         }
         input#num1, input#num2{
             width: 50px;
@@ -52,8 +54,16 @@
             margin: 4px;
         }
         div#res{
+            text-align: center;
             margin-top: 5px;
             margin-bottom: 5px;
+            border: 1px solid black;
+            border-radius: 0px 0px 10px 10px;
+            padding: 4px;
+            width: 311px;
+            position: relative;
+            left: -10px;
+            box-shadow: inset 0px 0px 8px 0px #00000059;
         }
     </style>
 </head>
@@ -73,10 +83,9 @@
             <input type="number" name="divi1" id="divi1"> /
             <input type="number" name="divi2" id="divi2">
             <input type="button" value="Soma" id="soma" onclick="dividir()">
-            <div id="res">Resultado</div>
 
         </form>
-
+        <div id="res">Resultado</div>
     </div>
     <script>
         function somar(){
