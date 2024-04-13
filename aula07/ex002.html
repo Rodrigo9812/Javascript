@@ -91,7 +91,7 @@
     <script>
         function somar(){
         var numero1=window.document.getElementById('num1')
-        var numero2=window.document.getElementById('num2')
+        var numero2=window.document.querySelector('input#num2')
         var res=window.document.getElementById('res')
         var n1 =Number(numero1.value)
         var n2 =Number(numero2.value)
@@ -99,7 +99,7 @@
         res.innerHTML=s
     }
     function diminuir(){
-        var dim1=document.getElementById('menos1')
+        var dim1=document.getElementsByTagName('input')[3]
         var dim2=document.getElementById('menos2')
         var res=document.getElementById('res')
         var di1=Number(dim1.value)
