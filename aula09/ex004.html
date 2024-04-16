@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin-top: 20%;
+            font: normal 1.4em Arial;
+        }
+        form{
+            background-color: rgb(199, 124, 95);
+            width: 300px;
+            height: 140px;
+            text-align: center;
+            font-size: 1.4em;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.368) ;
+        }
+        form>input{
+            font-size: .6em;
+            padding: 5px;
+        }
+        form>input#botao{
+            width: 240px;
+            height: 30px;
+            background-color:rgb(122, 77, 60) ;
+            color: white;
+            border: none;
+        }
+        div#container{
+            padding: 10px;
+            background-color: lightsalmon;
+            color: white;
+            width: 400px;
+            height: 240px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        div#container>h1{
+            text-align: center;
+            line-height: 70px;
+        }
+        div#res{
+            padding: 5px;
+            font-size: .8em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Identificação</h1>
+        <form action="#" autocomplete="off">
+            <p>Qual seu país?</p>
+            <input type="tel" name="text" id="text" placeholder="digite aqui...">
+            <input type="button" value="Enviar" onclick="clicou()" id="botao">
+            <div id="res"></div>
+        </form>
+    </div>
+    <script>
+        function clicou(){
+            var texto = document.getElementById('text')
+            var textov= texto.value
+            var res = document.getElementById('res')
+            if(textov == "Brasil"){
+                res.innerHTML = 'Voce é Brasileiro!'
+            }else{
+                res.innerHTML = 'Voce é gringo!'
+            }
+        }
+    </script>
+</body>
+</html>
