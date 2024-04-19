@@ -3,23 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETRAN</title>
+    <title>Sistema de Votação</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: arial;
+            font-size: 1.2em;
+            background-color: rgb(179, 226, 255);
+        }
+        div#container{
+            background-color: rgb(128, 193, 240);
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            border-radius:10px;
+            padding: 10px;
+            box-shadow: 2px 4px 12px 0px #0000004a;
+        }
+        div#container>h1{
+            font-size: 1.5em;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        div#container>p{
+            padding-bottom: 6px;
+            line-height: 23px;
+            text-indent: 10px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        input#nidade{
+            width: 170px;
+            padding: 10px;
+            font-size: .8em;
+            border: none;
+            border-radius: 5px;
+        }
+        input#botao{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+        }
+        div#res{
+            padding-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>SISTEMA DE MULTAS</h1>
-    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> <KM>
-    <input type="button" value="Verificar" onclick="calcular()">
-    <div id="res"></div>
+    <div id="container">
+        <h1>Sistema de Votação Brasileiro ✅</h1>
+        <p>Coloque abaixo sua idade e descubra se voce pode ou nao votar.</p>
+        <form action="#" method="post">
+            <input type="number" name="nidade" id="nidade">
+            <input type="button" value="Enviar" onclick="clicou()" id="botao">
+            <div id="res"></div>
+        </form>
+    </div>
     <script>
-        function calcular(){
-            var txtv=window.document.getElementById('txtvel')
-            var res = window.document.querySelector('div#res')
-            var vel = Number(txtvel.value)
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} KM/h</strong></p>`
-                if(vel > 60){
-                    res.innerHTML+='<p>Voce passou do limite de velocidade. <strong>MULTADO</strong></p>'
-                }
-            res.innerHTML+= 'Dirija sempre com cinto de segurança!'
+        function clicou(){
+            var idade = document.getElementById('nidade')
+            var idaden=idade.value
+            var res = document.getElementById('res')
+            if(idaden>=18 && idaden<=69){
+                res.innerHTML='Voto obrigatorio ✅'
+            }else if(idaden>=16 || idaden >69){
+                res.innerHTML="Voto opcional ❓❓"
+            }
+            else{
+                res.innerHTML="voce nao vota.❌"
+            }
         }
     </script>
 </body>
