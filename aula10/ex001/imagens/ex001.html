@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌄🌇🌃</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            background-color: #92B1CE;
+        }
+        body>p{
+            font-size: 1.3em;
+            padding-top: 20px;
+        }
+        #textoTopo{
+            padding: 30px;
+        }
+        .texto{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.53);
+        }
+        div#container{
+            border-radius: 10px;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.682);
+            margin: auto;
+            background-color: white;
+            width: 450px;
+            height: 350px;
+        }
+        #imagem{
+            box-sizing: border-box;
+            width: 250px;
+            height: 250px;
+            background-image: url(noite.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        #imagem2{
+            box-sizing: border-box;
+            width: 250px;
+            height: 250px;
+            background-image: url(tarde.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        #imagem3{
+            box-sizing: border-box;
+            width: 250px;
+            height: 250px;
+            background-image: url(dia.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        div#container>#textoHora{
+            text-align: center;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="texto" id="textoTopo">Hora do Dia</h1>
+    <div id="container">
+        <p id="textoHora">Agora são...</p>
+        <div id="imagem"></div>
+        <div id="imagem2"></div>
+        <div id="imagem3"></div>
+    </div>
+    <p class="texto">@_digo.cell_</p>
+    <script>
+        var dentro = document.getElementById('container')
+        var corpo = document.body
+        var hora = new Date()
+        var horaAgora = hora.getHours()
+        var minutos = hora.getMinutes()
+        var imagem = document.getElementById("imagem")
+        var texto = document.querySelector("p#textoHora")
+        if(horaAgora >= 20 || horaAgora <= 5 ){
+            imagem2.style.display="none"
+            imagem3.style.display='none'
+            texto.innerHTML=`Agora são ${horaAgora}:${minutos}, Boa noite!`
+            corpo.style.backgroundColor="#374C53"
+            texto.style.color="white"
+            dentro.style.backgroundColor="#223037"
+
+        }else if(horaAgora >= 13 && horaAgora < 20){
+            texto.innerHTML=`Agora são ${horaAgora}:${minutos}, Boa tarde!`
+            imagem.style.display="none"
+            imagem3.style.display='none'
+            corpo.style.backgroundColor="#9C7FB7"
+            dentro.style.backgroundColor="#493856"
+            texto.style.color="white"
+        }else{
+            imagem.style.display="none"
+            imagem2.style.display="none"
+            texto.innerHTML=`Agora são ${horaAgora}:${minutos}, Bom dia!`
+            dentro.style.backgroundColor="#7FA2C6"
+            texto.style.color="white"
+        }
+    </script>
+</body>
+</html>
