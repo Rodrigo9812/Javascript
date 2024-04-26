@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: lightblue;
+    background-color: #ADD8E6;
     color: white;
     font-size: 1.3em;
 }
@@ -16,7 +16,7 @@ h1{
 }
 section{
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: #6e9baa;
     width: 400px;
     height: 150px;
     padding: 10px;
@@ -33,6 +33,59 @@ section>form{
 section#img{
     border-radius: 0px 0px 10px 10px;
     text-align: center;
+    height: 50px;
+}
+.foto{
+    margin: auto;
+    width: 270px;
+    height: 250px;
+    margin-top: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div#img1{
+    background-image: url(../imagens/nenemM.png);
+    display: none;
+}
+div#img2{
+    background-image: url(../imagens/nenemF.png);
+    display: none;
+}
+div#img3{
+    background-image: url(../imagens/criançaM.png);
+    display: none;
+}
+div#img4{
+    background-image: url(../imagens/criançaF.png);
+    display: none;
+}
+div#img5{
+    background-image: url(../imagens/adolescente.png);
+    display: none;
+}
+div#img6{
+    background-image: url(../imagens/jovemM.png);
+    display: none;
+}
+div#img7{
+    background-image: url(../imagens/jovemF.png);
+    display: none;
+}
+div#img8{
+    background-image: url(../imagens/homem.png);
+    display: none;
+}
+div#img9{
+    background-image: url(../imagens/mulher.png);
+    display: none;
+}
+div#img10{
+    background-image: url(../imagens/senhor.png);
+    display: none;
+}
+div#img11{
+    background-image: url(../imagens/senhora.png);
+    display: none;
 }
 footer{
     text-align: center;
@@ -40,6 +93,6 @@ footer{
 }
 footer>p>a{
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     text-shadow: 1px 1px 1px black;
 }
