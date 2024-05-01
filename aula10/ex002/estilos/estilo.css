@@ -52,7 +52,7 @@ section>form{
     border: none;
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
 }
 #botao:hover{
     background-color: #a9cfdc;
@@ -63,6 +63,11 @@ section#img{
     height: 300px;
     display: none;
 
+}
+#txt{
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.444);
+    text-align: center;
 }
 
 #detector{

@@ -40,6 +40,7 @@ function clicou(){
         imagem5.style.display='none'
         imagem1.style.display='none'
         imagem8.style.display='none'
+        imagem10.style.display='none'
 
     }else if(nascimento >= 1975){//adulto
         img.style.display='block'
@@ -49,7 +50,7 @@ function clicou(){
         imagem6.style.display='none'
         imagem1.style.display='none'
         imagem10.style.display='none'
-    }else if(nascimento >=1974 || nascimento < 1974){
+    }else if(nascimento >=1974 || nascimento < 1974){//senhor
         img.style.display='block'
         detector.innerText=`voce tem ${idade} anos, é um senhor`
         imagem10.style.display='block'
