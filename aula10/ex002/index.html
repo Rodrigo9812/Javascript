@@ -12,21 +12,21 @@
     </header>
     <main>
         <section id="form">
-            <form action="" method="post">
+            <form action="#" method="post">
                 <label for="idata">Ano de nascimento:</label>
-                <input type="number" name="data" id="idata" placeholder="Digite aqui..." max="100" min="1" style="width: 100px;">
-                <p>
+                <input type="number" name="data" id="idata" placeholder="Digite aqui..." max="2024" min="1970" style="width: 100px;">
+                <div>
                     sexo: 
                     <label for="imasc">Masculino</label>
-                    <input type="radio" name="sexo" id="imasc">
+                    <input type="radio" name="sexo" id="imasc" checked>
                     <label for="ifemi">Feminino</label>
                     <input type="radio" name="sexo" id="ifemi">
-                </p>
-                <input type="button" value="Verificar" onclick="clicou()">
+                </div>
+                <input type="button" id="botao" value="Verificar" onclick="clicou()">
             </form>
         </section>
         <section id="img">
-            <p id="detector">Detecção de idade...</p>
+            <p id="detector">Detecção de idade</p>
             <div id="img1" class="foto"></div>
             <div id="img2" class="foto"></div>
             <div id="img3" class="foto"></div>

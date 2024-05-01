@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #ADD8E6;
+    background-color: #75939d;
     color: white;
     font-size: 1.3em;
 }
@@ -16,7 +16,7 @@ h1{
 }
 section{
     margin: auto;
-    background-color: #6e9baa;
+    background-color: #7db0c1;
     width: 400px;
     height: 150px;
     padding: 10px;
@@ -24,17 +24,52 @@ section{
 }
 section#form{
     border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.573);
+    line-height: 45px;
 }
 
 section>form{
-    text-align: left;
+    display: block;
     margin-top: 20px;
+}
+#idata{
+    border: none;
+    border-radius: 3px;
+    font-size: .6em;
+    padding: 5px;
+}
+#botao{
+    display: block;
+    font-size: .6em;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#botao:hover{
+    background-color: #a9cfdc;
 }
 section#img{
     border-radius: 0px 0px 10px 10px;
     text-align: center;
-    height: 50px;
+    height: 300px;
+    display: none;
+
 }
+
+#detector{
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.573);
+}
+
 .foto{
     margin: auto;
     width: 270px;
@@ -45,7 +80,7 @@ section#img{
 }
 div#img1{
     background-image: url(../imagens/nenemM.png);
-    display: none;
+
 }
 div#img2{
     background-image: url(../imagens/nenemF.png);
@@ -92,6 +127,7 @@ footer{
     padding: 10px;
 }
 footer>p>a{
+    font-size: .9em;
     text-decoration: none;
     color: #ffffff;
     text-shadow: 1px 1px 1px black;
