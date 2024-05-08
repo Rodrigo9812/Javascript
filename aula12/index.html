@@ -8,15 +8,47 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div></div>
-        <div></div>
+        <div>
+            <p>
+                <label for="inicio">Inicio:</label>
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p>
+                <label for="fim">Fim:</label>
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p>
+                <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="passo">
+            </p>
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+        <div>
+            <p id="res">contando...</p>
+        </div>
     </section>
     <footer>
-        
+        &copy; <a href="https://www.instagram.com/_digo.cell_/">Digo.Cell</a>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        function contar(){
+            var inicio = document.getElementById('inicio').value
+            var fim = document.getElementById('fim').value
+            var passo = document.getElementById('passo').value
+            var res = document.getElementById('res')
+            var calc = inicio * passo
+            if(inicio == 0 || fim == 0){
+                res.innerText='Valor errado'
+            }else if(passo==0){
+                alert('0 Invalido considerando 1')
+                var passo=1
+            }else{
+
+            }
+        }
+    </script>
 </body>
 </html>
