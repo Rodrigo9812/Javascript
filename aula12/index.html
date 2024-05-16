@@ -35,19 +35,31 @@
     </footer>
     <script>
         function contar(){
-            var inicio = document.getElementById('inicio').value
-            var fim = document.getElementById('fim').value
-            var passo = document.getElementById('passo').value
-            var res = document.getElementById('res')
-            var calc = inicio * passo
-            if(inicio == 0 || fim == 0){
-                res.innerText='Valor errado'
-            }else if(passo==0){
-                alert('0 Invalido considerando 1')
-                var passo=1
+            let inicio = document.getElementById('inicio')
+            let fim = document.getElementById('fim')
+            let passo = document.getElementById('passo')
+            let res = document.getElementById('res')
+
+
+            if(inicio.value.length <= 0 || fim.value.length <= 0 || passo.value.length <= 0){
+                alert('valores errados')
             }else{
+                res.innerHTML='contando: <br>'
+                let i = Number(inicio.value)
+                let f = Number(fim.value)
+                let p = Number(passo.value)
+                if(i<f){
+                    for(let c=i; c<=f; c+=p){
+                    res.innerHTML += ` ${c}`+'👉🏼'
+                }
+                }else{
+                    for(let c=i; c>=f; c-=p){
+                        res.innerHTML += ` ${c}`+'👉🏼'
+                    }
+                }
 
             }
+            res.innerHTML+='✔️'
         }
     </script>
 </body>
