@@ -8,23 +8,26 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>tabuada</h1>
     </header>
     <section>
-        <div id="select">
-            <label for="inum">Numero:</label>
-            <input type="number" name="num" id="inum">
-            <input type="button" value="Gerar Tabuada" onclick="gerar()">
+        <div>
+            <p>Numero: 
+                <input type="number" name="num" id="txtn">
+                <input type="button" value="gerar tabuada" onclick="tabuada()">
+                <input type="button" value="limpar" onclick="limpar()">
+            </p>
         </div>
-        <div id="tabuada">
-            <select name="tabuada" id="itabuada">
-                <option value="1">Digite um numero acima</option>
-                <option value="2"></option>
+        <div>
+            <select name="tabuada" id="seltab" size="10" style="width:175px; height: 170px;">
+                <option value="" id="opt">Digite um numero acima </option>
             </select>
         </div>
     </section>
     <footer>
         &copy; <a href="https://www.instagram.com/_digo.cell_/">Digo.Cell</a>
     </footer>
+    <script src="script.js">
+    </script>
 </body>
 </html>
