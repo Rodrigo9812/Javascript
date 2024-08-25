@@ -13,19 +13,21 @@
     <section>
         <div>
             <p>Numero: 
-                <input type="number" name="num" id="txtn">
+                <input type="number" name="num" id="numero">
                 <input type="button" value="gerar tabuada" onclick="tabuada()">
                 <input type="button" value="limpar" onclick="limpar()">
             </p>
         </div>
         <div>
-            <select name="tabuada" id="seltab" size="10" style="width:175px; height: 170px;">
-                <option value="" id="opt">Digite um numero acima </option>
+            <select id="contas" name="tabuada" id="areaTabuada" size="10" style="background-color: rgba(255, 0, 0, 0.074);width:175px;color:rgb(0, 0, 0); height: 175px; padding: 3px; border: 1px solid rgb(0, 0, 0); ">
+                <option value="" >Digite um numero acima</option>
             </select>
         </div>
+        <p id="p"></p>
     </section>
     <footer>
-        &copy; <a href="https://www.instagram.com/_digo.cell_/" target="_blank">Digo.Cell</a>
+        &copy;
+        <a href="https://www.instagram.com/_digo.cell_/" target="_blank">Digo.Cell</a>
     </footer>
     <script src="script.js">
     </script>
