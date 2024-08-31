@@ -1,8 +1,19 @@
-let num = [0,3,5,7]
-num.sort()
-num.push(9)
-console.log(`temos os vetores ${num}`)
-console.log(`o vetor tem ${num.length} elementos`)
-let pos = num.indexOf(3)
-console.log(`o valor 5 esta na posiçao ${pos}`)
+let num = [5,2,8,9,3]
 
+num[5]=4
+num.push(1)
+num.sort()
+
+console.log(num)
+console.log(`o vetor tem ${num.length} posiçoes`)
+console.log(`o primeiro valor é o ${num[0]}`)
+
+/*for(let pos = 0; pos < num.length; pos++){
+    console.log(`a posição ${pos} tem o valor ${num[pos]}`)
+}
+    */
+/*
+for (let pos in num){
+    console.log(`a posição ${pos} tem o valor ${num[pos]}`)
+}
+    */
